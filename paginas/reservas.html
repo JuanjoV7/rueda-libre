@@ -34,7 +34,7 @@
           </p>
           <p> 
             <label for="documento">Número de documento</label>
-            <input type="tel" id="documento" name="documento" required minlength="10" maxlength="10"/>
+            <input type="tel" id="documento" name="documento" required minlength="6" maxlength="10"/>
           </p>
           <p>
             <label for="correo">Correo electrónico</label>
@@ -42,7 +42,8 @@
           </p>
           <p>
             <label for="celular">Número de celular</label>
-            <input type="tel" id="celular" name="celular" required minlength="10" maxlength="10"/>
+            <input type="tel" id="celular" name="celular" required minlength="10" maxlength="10" pattern="3[0-9]{9}" title="El número debe tener 10 dígitos y empezar por 3"/>
+    </p>
           </p>
         </fieldset>
 
@@ -50,7 +51,7 @@
           <legend>Tu alquiler</legend> 
           <p>
             <label for="fecha">Fecha de alquiler</label>
-            <input type="date" id="fecha" name="fecha" required/>
+            <input type="date" id="fecha" name="fecha" required min="2026-11-01" max="2026-12-31"/>
           </p>
           <p>
             <label for="tipobici">Tipo de bicicleta</label>
@@ -72,7 +73,7 @@
           </p>
           <p>
             <label for="cantidad">Cantidad de bicicletas</label>
-            <input type="number" id="cantidad" name="cantidad" required min="1"/>
+            <input type="number" id="cantidad" name="cantidad" required min="1" max="6"/>
           </p>
           <p>
             <label for="recorrido">Recorrido</label>
@@ -90,7 +91,7 @@
           <legend>Confirmación</legend>
           <p>
             <label for="comentarios">Comentarios adicionales (No obligatorio)</label>
-            <textarea id="comentarios" name="comentarios" rows="2"></textarea>
+            <textarea id="comentarios" name="comentarios" rows="2" maxlength="300"></textarea>
           </p>
           <p>
             <label for="politicas">Aceptación de las políticas de privacidad</label>
