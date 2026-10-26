@@ -11,38 +11,48 @@
   --espacio-sm: 0.5rem;
   --espacio-md: 1rem;
   --espacio-lg: 2rem;
+  
 }
 
 body {
   font-family: var(--fuente-cuerpo);
-  font-weight: 400;                     
-  color: var(--azul-noche);             
-  background-color: var(--crema);      
+  font-weight: 400;
+  color: var(--azul-noche);
+  background-color: var(--crema);
   padding: var(--espacio-md);
   line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--fuente-titulos);
   font-weight: 700;
   color: var(--azul-noche);
   margin-bottom: var(--espacio-sm);
 }
 
-.texto-secundario, footer p {
+.texto-secundario,
+footer p {
   color: var(--gris-asfalto);
   font-weight: 400;
 }
+
 a {
-    color: var(--verde-ruta);
-    font-weight: 600;
+  color: var(--verde-ruta);
+  font-weight: 600;
 }
 
 a:hover {
-    color: var(--naranja-pedal);
+  color: var(--naranja-pedal);
+  text-decoration:underline;
 }
 
-button, .boton {
+button,
+.boton {
   background-color: var(--verde-ruta);
   color: #ffffff;
   border: none;
@@ -52,7 +62,62 @@ button, .boton {
   cursor: pointer;
 }
 
-button:hover, .boton:hover {
+button:hover,
+.boton:hover {
   background-color: var(--naranja-pedal);
+}
 
+#menu a {color: var(--gris-asfalto);
+  text-decoration: none;
+  font-weight: 600;
+  padding: var(--espacio-sm);
+}
+
+#menu a.activo 
+{color: var(--verde-ruta);
+  font-weight: 600;
+} 
+
+#menu a:focus {
+  color: var(--verde-ruta);
+  outline: 3px solid var(--naranja-pedal);
+  outline-offset: 3px;
+}
+
+.boton-reservar {
+  display: inline-block;
+  background-color: var(--verde-ruta);
+  color: #ffffff;
+  font-family: var(--fuente-cuerpo);
+  font-weight: 600;
+  padding: var(--espacio-sm) var(--espacio-md);
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.boton-reservar:hover {
+  background-color: var(--naranja-pedal);
+  color: var(--azul-noche);
+  text-decoration: underline;
+}
+
+.boton-reservar:focus {
+  outline: 3px solid var(--naranja-pedal);
+  outline-offset: 3px;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid var(--gris-asfalto);
+  padding: var(--espacio-sm);
+  font-family: var(--fuente-cuerpo);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid var(--naranja-pedal);
+  outline-offset: 2px;
+  border-color: var(--verde-ruta);
 }
