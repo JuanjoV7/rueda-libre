@@ -14,21 +14,28 @@
 }
 
 body {
-  font-family: (var(--fuente-cuerpo));
-  color: var(--azul-noche);
-  background-color: var(--crema);
-  padding:var(--espacio-md);
+  font-family: var(--fuente-cuerpo);
+  font-weight: 400;                     
+  color: var(--azul-noche);             
+  background-color: var(--crema);      
+  padding: var(--espacio-md);
   line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--fuente-titulos);
+  font-weight: 700;
   color: var(--azul-noche);
   margin-bottom: var(--espacio-sm);
 }
 
+.texto-secundario, footer p {
+  color: var(--gris-asfalto);
+  font-weight: 400;
+}
 a {
-    color: var(--verde-ruta)
+    color: var(--verde-ruta);
+    font-weight: 600;
 }
 
 a:hover {
@@ -36,14 +43,16 @@ a:hover {
 }
 
 button, .boton {
-    background-color: var(--verde-ruta);
-    color: #FFFFFF;
-    border: none;
-    padding: var(--espacio-sm) calc(var(--espacio-md)*2);
-    cursor: pointer;
+  background-color: var(--verde-ruta);
+  color: #ffffff;
+  border: none;
+  padding: var(--espacio-sm) calc(var(--espacio-md) * 2);
+  font-family: var(--fuente-cuerpo);
+  font-weight: 600;
+  cursor: pointer;
 }
 
-.boton {
+button:hover, .boton:hover {
+  background-color: var(--naranja-pedal);
 
-    background-color: var(--naranja-pedal);
 }
