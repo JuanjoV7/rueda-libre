@@ -1,0 +1,49 @@
+:root {
+  --verde-ruta: #1e7a4f;
+  --naranja-pedal: #f39a2b;
+  --azul-noche: #14213d;
+  --crema: #faf6ef;
+  --gris-asfalto: #5b6470;
+
+  --fuente-titulos: "Montserrat", sans-serif;
+  --fuente-cuerpo: "Open Sans", sans-serif;
+
+  --espacio-sm: 0.5rem;
+  --espacio-md: 1rem;
+  --espacio-lg: 2rem;
+}
+
+body {
+  font-family: (var(--fuente-cuerpo));
+  color: var(--azul-noche);
+  background-color: var(--crema);
+  padding:var(--espacio-md);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fuente-titulos);
+  color: var(--azul-noche);
+  margin-bottom: var(--espacio-sm);
+}
+
+a {
+    color: var(--verde-ruta)
+}
+
+a:hover {
+    color: var(--naranja-pedal);
+}
+
+button, .boton {
+    background-color: var(--verde-ruta);
+    color: #FFFFFF;
+    border: none;
+    padding: var(--espacio-sm) calc(var(--espacio-md)*2);
+    cursor: pointer;
+}
+
+.boton {
+
+    background-color: var(--naranja-pedal);
+}
