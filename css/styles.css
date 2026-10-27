@@ -74,6 +74,7 @@ a:hover {
 
 #menu ul {
   list-style: none;
+  text-align: center;
 }
 
 #menu li {
