@@ -78,11 +78,13 @@ a:hover {
 }
 
 #menu li {
+  
   display: inline-block;
   margin-right: var(--espacio-md);
 }
 
 #menu a {
+  
   color: var(--gris-asfalto);
   text-decoration: none;
   font-weight: 600;
