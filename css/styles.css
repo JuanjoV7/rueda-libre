@@ -72,57 +72,86 @@ a:hover {
   text-decoration: underline;
 }
 
-#menu ul {
+.menu ul {
+  display: flex;
+  justify-content: center;
   list-style: none;
   text-align: center;
+  
 }
 
-#menu li {
-  
+.menu li {
+  display: flex;
+  justify-content: center;
   display: inline-block;
   margin-right: var(--espacio-md);
 }
 
-#menu a {
-  
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.menu a {
   color: var(--gris-asfalto);
   text-decoration: none;
   font-weight: 600;
   padding: var(--espacio-sm);
 }
 
-#menu a.activo {
+.menu a.activo {
   color: var(--verde-ruta);
   font-weight: 600;
 }
 
-#menu a:hover {
+.menu a:hover {
   color: var(--naranja-pedal);
   text-decoration: underline;
+  
 }
 
-#menu a:focus {
+.menu a:focus {
   color: var(--verde-ruta);
   outline: 3px solid var(--naranja-pedal);
   outline-offset: 3px;
 }
 
-.tarjeta-servicio,
-article {
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
   background-color: #ffffff;
   border: 1px solid var(--gris-asfalto);
   border-radius: 4px;
   padding: var(--espacio-md);
-  margin-bottom: var(--espacio-lg);
+  margin-bottom: var(--espacio-lg); 
+  
 }
 
-.tarjeta-servicio img,
+.infoserv {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.tarjetas img,
 main img {
-  width: 100%;
+  width: 30%;
   height: auto;
-  display: block;
+  display: flex;
 }
 
+#imgserv {
+  display: flex;
+  flex: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 4px;
+  border: px solid var(--gris-asfalto);
+}
 
 .tarjeta-destacada {
   position: relative;
