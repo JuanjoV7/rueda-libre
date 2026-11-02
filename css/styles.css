@@ -132,6 +132,12 @@ a:hover {
   gap: 1.5rem;
 }
 
+.card-img-top,
+.tarjetas img {
+  height: 200px;        /* Fuerza a que todas midan 200px de alto */
+  object-fit: cover;    /* Recorta los bordes sobrantes sutilmente para que la foto no se aplane ni se estire */
+}
+
 .tarjetas {
   display: flex;
   flex-direction: column;
