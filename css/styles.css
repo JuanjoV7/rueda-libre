@@ -68,6 +68,7 @@ a:hover {
   text-decoration: underline;
 }
 
+
 .menu {
   display: flex;
   flex-direction: column; 
@@ -110,85 +111,6 @@ a:hover {
   outline-offset: 3px;
 }
 
-.portada {
-  display: flex;
-  flex-direction: column;
-  gap: var(--espacio-md);
-  padding: var(--espacio-md);
-  min-height: auto;
-}
-
-.portada-img {
-  width: 100%;
-  height: auto;
-}
-
-.rutas-galeria,
-.flota-contenedor,
-.servicios-contenedor,
-.contenedor-reservas {
-  display: grid;
-  grid-template-columns: 1fr; 
-  gap: 1.5rem;
-}
-
-.card-img-top,
-.tarjetas img {
-  height: 200px;        /* Fuerza a que todas midan 200px de alto */
-  object-fit: cover;    /* Recorta los bordes sobrantes sutilmente para que la foto no se aplane ni se estire */
-}
-
-.tarjetas {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #ffffff;
-  border: 1px solid var(--gris-asfalto);
-  border-radius: 4px;
-  padding: var(--espacio-md);
-  margin-bottom: var(--espacio-lg);
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-.tarjetas img {
-  width: 100%;
-  height: 200px; 
-  object-fit: cover; 
-}
-
-.tarjetas section {
-  display: flex;
-  flex-direction: column;
-  padding: var(--espacio-md);
-  height: 100%; 
-}
-
-.tarjetas .boton-reservar {
-  margin-top: auto; 
-}
-
-.tarjeta-destacada {
-  position: relative;
-}
-
-.insignia-nuevo {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  background-color: var(--naranja-pedal);
-  color: var(--azul-noche);
-  font-family: var(--fuente-titulos);
-  font-size: 0.8rem;
-  font-weight: 700;
-  padding: 0.2rem 0.6rem;
-  border-radius: 4px;
-  text-transform: uppercase;
-}
 
 button,
 .boton,
@@ -235,14 +157,6 @@ button:focus,
   z-index: 1000;
 }
 
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  text-align: center;
-}
-
 .boton-whatsapp:hover {
   background-color: #128c7e;
   color: #ffffff;
@@ -251,6 +165,14 @@ button:focus,
 .boton-whatsapp:focus {
   outline: 3px solid var(--naranja-pedal);
   outline-offset: 3px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
 }
 
 table {
@@ -273,6 +195,7 @@ th {
   color: #ffffff;
   font-family: var(--fuente-titulos);
 }
+
 
 form fieldset {
   border: 1px solid var(--gris-asfalto);
@@ -327,6 +250,7 @@ form button {
   margin-top: var(--espacio-sm);
 }
 
+
 .fila-campos {
   display: flex;
   flex-direction: column; 
@@ -338,6 +262,7 @@ form button {
   margin-bottom: 0; 
 }
 
+
 @media (min-width: 768px) {
   .menu {
     flex-direction: row;
@@ -348,28 +273,11 @@ form button {
     flex-direction: row;           
     gap: 2rem;
   }
-  .servicios-contenedor {
-    grid-template-columns: repeat(2, 1fr); 
-  }
 }
 
 @media (min-width: 1200px) {
-  .portada {
-    min-height: 70vh;
-    padding: var(--espacio-lg);
-    grid-template-columns: 1fr 1fr; 
-    display: grid;
-  }
-
-  .rutas-galeria {
-    grid-template-columns: repeat(3, 1fr); 
-  }
-
-  .flota-contenedor {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-  }
-
   .contenedor-reservas {
+    display: grid;
     grid-template-columns: 2fr 1fr; 
     align-items: start; 
   }
