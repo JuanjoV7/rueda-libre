@@ -22,7 +22,7 @@
 }
 
 
-body {
+body{
   font-family: var(--fuente-cuerpo);
   font-weight: 400;
   color: var(--azul-noche);
@@ -30,6 +30,8 @@ body {
   padding-bottom: 5rem; 
   line-height: 1.6;
 }
+
+navbar
 
 h1,
 h2,
