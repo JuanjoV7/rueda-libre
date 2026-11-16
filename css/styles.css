@@ -242,6 +242,16 @@ form button {
   margin-top: var(--espacio-sm);
 }
 
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: transparent;
+}
+
+.carousel-control-prev:focus-visible,
+.carousel-control-next:focus-visible {
+  outline: 3px solid var(--naranja-pedal);
+  outline-offset: -6px;
+}
 
 
 @media (min-width: 768px) {
