@@ -28,6 +28,7 @@
   --bs-link-color: var(--verde-ruta);
   --bs-link-color-rgb: 30, 122, 79;
   --bs-border-radius: 4px;
+  --bs-form-invalid-color: #b02a37;
 }
 
 
@@ -65,7 +66,7 @@ a {
 }
 
 a:hover {
-  color: var(--naranja-pedal);
+  color: var(--azul-noche);
   text-decoration: underline;
 }
 
@@ -155,7 +156,7 @@ button:focus,
   bottom: 1.5rem;
   right: 1.5rem;
   background-color: #25d366;
-  color: #ffffff;
+  color: var(--azul-noche);
   font-family: var(--fuente-cuerpo);
   font-weight: 700;
   padding: var(--espacio-sm) var(--espacio-md);
@@ -166,8 +167,8 @@ button:focus,
 }
 
 .boton-whatsapp:hover {
-  background-color: #128c7e;
-  color: #ffffff;
+  background-color: #46da7d;
+  color: var(--azul-noche);
 }
 
 .boton-whatsapp:focus {
